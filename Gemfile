@@ -2,9 +2,20 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 
+group :development do
 gem 'sqlite3'
+end
+
 
 gem 'json'
+
+group :production do
+  gem 'pg'
+   gem 'therubyracer-heroku'
+end
+
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
